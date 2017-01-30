@@ -15,13 +15,13 @@
         <h1>Hello World!</h1>
         <table>
             <%
-                for (int i = 0; i < 3; i++){
+                for (int row = 0; row < 3; row++){
             %>
             <tr>
                 <%
                 for (int col = 0; col < 3; col++){
                 %>
-                    <td>Row: <% out.println(i);%> Col: <% out.println(col);%> | </td>
+                    <td>Row: <% out.println(row);%> Col: <% out.println(col);%> | </td>
                 <%
                 }
                 %>
