@@ -15,7 +15,7 @@ import java.util.Date;
 public class WelcomeService {
     private Calendar calendar = Calendar.getInstance();
     
-    public final String getTimeOfDay(){
+    public final String getPartOfDay(){
         calendar.setTime(new Date());
         if (calendar.get(Calendar.HOUR_OF_DAY) >= 7 && calendar.get(Calendar.HOUR_OF_DAY) <= 11)
         {
@@ -33,6 +33,6 @@ public class WelcomeService {
     
     public final String getGreeting(String name)
     {
-        return "Good " + getTimeOfDay() + ", " + name + ". Welcome!";
+        return "Good " + getPartOfDay() + ", " + name + ". Welcome!";
     }
 }
