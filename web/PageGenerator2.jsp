@@ -21,7 +21,7 @@
                 <%
                 for (int col = 0; col < 3; col++){
                 %>
-                    <td>xxx</td>
+                    <td>Row: <% out.println(i);%> Col: <% out.println(col);%> | </td>
                 <%
                 }
                 %>
